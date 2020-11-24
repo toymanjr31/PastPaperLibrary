@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <h:outputStylesheet library="css" name="bootstrap.min.css"  />
+        <title>Past Paper Library</title>
+    </h:head>
+    <h:body>
+        <div class="container-fluid">
+            <div class="jumbotron p-3 mb-2 bg-primary text-white">
+                <center><h1>Past Paper Library</h1></center>
+                <h:form>
+                    <h:commandButton value="Home" action="usermainpage"/>
+                    <h:commandButton value="Log Out" action="login" styleClass="float-right"/>
+                </h:form>
+            </div>
+        </div>
+        <center>
+        <div class="container">
+            <h3>Welcome!</h3>
+            <h:form>
+                <h:commandButton value="Search Paper by Subject" action="paperbysubject" styleClass="btn btn-primary btn-block btnPos"/><br/>
+                <h:commandButton value="Search Paper by Lecturer" action="paperbylecturer" styleClass="btn btn-primary btn-block btnPos"/><br/>
+                <h:commandButton value="Search Paper by Subject" action="paperbyyear" styleClass="btn btn-primary btn-block btnPos"/><br/>
+                <h:commandButton value="Add Paper to Library" action="addpaper" styleClass="btn btn-primary btn-block btnPos"/>
+            </h:form>
+        </div>
+        </center>
+    </h:body>
+</html>
+
